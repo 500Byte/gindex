@@ -31,14 +31,14 @@ function init() {
                             <i class="mdui-icon material-icons"></i>
                         </a>
                         <form class="searchBar_form titleBar_exhibit" method="get" action="/${cur}:search">
-                            <input type="text" name="q" placeholder="Search in current drive" value="${search_text}" />
+                            <input type="text" name="q" placeholder="Buscar" value="${search_text}" />
                         </form>
                     </div>`;
     // plate
     var  pan_bar  =  `
                     <div class="titleBar_item titleBar_pan">
                         <a class="titleBar_link panBar_link"><i></i></a>
-                        <div class="menu_list titleBar_exhibit"><p>Netdisc Drive</p>`;
+                        <div class="menu_list titleBar_exhibit"><p>Gindex</p>`;
     names.forEach((name, idx) => {
         pan_bar += `<a  class="menu_list_item"  href="/${idx}:/">${name}</a>`;
     } ) ;
@@ -210,7 +210,7 @@ function nav(path) {
     //               <i class="mdui-icon material-icons">search</i>
     //           </button>
     //           <form id="search_bar_form" method="get" action="/${cur}:search">
-    //           <input class="mdui-textfield-input" type="text" name="q" placeholder="Search in current drive" value="${search_text}"/>
+    //           <input class="mdui-textfield-input" type="text" name="q" placeholder="Buscar" value="${search_text}"/>
     //           </form>
     //           <button class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">close</i></button>
     //       </div>`;

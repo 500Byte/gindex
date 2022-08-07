@@ -75,7 +75,7 @@ const themeConfig = {
   // Background picture
   "bimg": "",
   // show menu
-  "menu_show": true,
+  "menu_show": false,
   // menu group
   "menus": [
     {
