@@ -71,7 +71,7 @@ const themeConfig = {
   // accent color
   "accent_color": "blue",
   // avatar
-  "avatar" : "https://raw.githack.com/500Byte/gindex/main/dist/img/avatar.png" ,
+  "avatar" : "//raw.githack.com/500Byte/gindex/main/dist/img/avatar.png" ,
   // Background picture
   "bimg": "",
   // show menu
