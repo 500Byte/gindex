@@ -294,7 +294,7 @@ function list(path) {
    <div class="mdui-row"> 
     <ul id="list" class="mdui-list"> 
     </ul>
-    <div id="count" class="mdui-hidden mdui-center mdui-text-center mdui-m-b-3 mdui-typo-subheading mdui-text-color-blue-grey-500">Found <span class="number"></span> items</div>
+    <div id="count" class="mdui-hidden mdui-center mdui-text-center mdui-m-b-3 mdui-typo-subheading mdui-text-color-blue-grey-500"><span class="number"></span> archivos.</div>
    </div>
   ` ;
     $('#content').html(content);
@@ -511,11 +511,11 @@ function render_search_result_list() {
   <i class="mdui-icon material-icons icon-sort" data-sort="name" data-order="more">expand_more</i>
       </div> 
       <div class="mdui-col-sm-3 mdui-text-right">
-       Change the time
+       Fecha de modificación
   <i class="mdui-icon material-icons icon-sort" data-sort="date" data-order="downward">expand_more</i>
       </div>
       <div class="mdui-col-sm-2 mdui-text-right">
-       size
+       Tamaño
   <i class="mdui-icon material-icons icon-sort" data-sort="size" data-order="downward">expand_more</i>
       </div>
       </li>
@@ -846,10 +846,10 @@ function file_video(path) {
         .map(it => `<li class="mdui-menu-item"><a href="${it.href}" class="mdui-ripple">${it.text}</a></li>`)
         .join('');
     player_items += `<li class="mdui-divider"></li>
-                   <li class="mdui-menu-item"><a id="copy-link" class="mdui-ripple">copy link</a></li>` ;
+                   <li class="mdui-menu-item"><a id="copy-link" class="mdui-ripple">Copiar enlace</a></li>` ;
     const playBtn = `
       <button class="mdui-btn mdui-ripple mdui-color-theme-accent" mdui-menu="{target:'#player-items'}">
-        <i class="mdui-icon material-icons"></i>External player plays <i class="mdui-icon material-icons"></i>
+        <i class="mdui-icon material-icons"></i>Reproductor externo <i class="mdui-icon material-icons"></i>
       </button>
       <ul class="mdui-menu" id="player-items">${player_items}</ul>`;
 
@@ -914,11 +914,11 @@ function file_video(path) {
   <br>${playBtn}
   <!-- Fixed tab -->
   <div class="mdui-textfield">
-    <label class="mdui-textfield-label">download link</label>
+    <label class="mdui-textfield-label">Enlace directo</label>
     <input class="mdui-textfield-input" type="text" value="${url}"/>
   </div>
   <div class="mdui-textfield">
-    <label class="mdui-textfield-label">HTML reference</label>
+    <label class="mdui-textfield-label">Código HTML</label>
     <textarea class="mdui-textfield-input"><video><source src="${url}" type="video/mp4"></video></textarea>
   </div>
 </div>
@@ -936,10 +936,10 @@ function file_video(path) {
             controls: ['play-large', 'restart', 'play', 'progress', 'current-time', 'duration', 'mute', 'volume', 'captions', 'settings', 'pip', 'fullscreen'],
             settings: ['captions', 'quality', 'speed', 'loop'],
             i18n : {
-                speed : 'speed' ,
-                normal : 'normal' ,
-                quality : 'quality' ,
-                captions : 'subtitles' ,
+                speed : 'Velocidad',
+                normal : 'Normal',
+                quality : 'Calidad',
+                captions : 'Subtítulos' ,
                 disabled : 'disabled' ,
             } ,
             blankVideo: 'https://cdn.plyr.io/static/blank.mp4',
@@ -976,10 +976,10 @@ function file_video(path) {
             controls: ['play-large', 'restart', 'play', 'progress', 'current-time', 'duration', 'mute', 'volume', 'captions', 'settings', 'pip', 'fullscreen'],
             settings: ['captions', 'quality', 'speed', 'loop'],
             i18n : {
-                speed : 'speed' ,
-                normal : 'normal' ,
-                quality : 'quality' ,
-                captions : 'subtitles' ,
+                speed : 'Velocidad',
+                normal : 'Normal',
+                quality : 'Calidad',
+                captions : 'Subtítulos' ,
                 disabled : 'disabled' ,
             } ,
             blankVideo: 'https://cdn.plyr.io/static/blank.mp4',
@@ -997,10 +997,10 @@ function file_video(path) {
             controls: ['play-large', 'restart', 'play', 'progress', 'current-time', 'duration', 'mute', 'volume', 'captions', 'settings', 'pip', 'fullscreen'],
             settings: ['captions', 'quality', 'speed', 'loop'],
             i18n : {
-                speed : 'speed' ,
-                normal : 'normal' ,
-                quality : 'quality' ,
-                captions : 'subtitles' ,
+                speed : 'Velocidad',
+                normal : 'Normal',
+                quality : 'Calidad',
+                captions : 'Subtítulos' ,
                 disabled : 'disabled' ,
             } ,
             blankVideo: 'https://cdn.plyr.io/static/blank.mp4',
@@ -1123,10 +1123,10 @@ function file_audio(path) {
 
     const player = new Plyr('audio', {
         i18n : {
-            speed : 'speed' ,
-            normal : 'normal' ,
-            quality : 'quality' ,
-            captions : 'subtitles' ,
+            speed : 'Velocidad',
+            normal : 'Normal',
+            quality : 'Calidad',
+            captions : 'Subtítulos' ,
             disabled : 'disabled' ,
         } ,
     } ) ;
