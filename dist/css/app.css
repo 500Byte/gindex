@@ -59,14 +59,6 @@
     transition: 1.2s;
 }
 
-.titleBar .titleBar_container .titleBar_avatar img:hover {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-}
-
 .titleBar_nav {
     flex-grow: 1;
     flex-shrink: 0;
