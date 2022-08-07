@@ -86,19 +86,18 @@ function init() {
 
     html += `
 <div class="mdui-container">
-<div class="mdui-container-fluid">
-    <nav id="nav" class="flex" aria-label="Breadcrumb">
-        <ol class="inline-flex items-center space-x-1 md:space-x-3">
-            <li class="inline-flex items-center">
-            </li>
-        </ol>
-    </nav>
-</div>
-  <div class="mdui-container-fluid">
-    <div id="head_md" class="mdui-typo nexmoe-item" style="display:none;padding: 20px 0;"></div>
-    <div id="content" class="nexmoe-item"></div>
-    <div id="readme_md" class="mdui-typo nexmoe-item" style="display:none; padding: 20px 0;"></div>
-  </div>
+    <div class="mdui-container-fluid">
+        <nav id="nav" class="flex" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center"></li>
+            </ol>
+        </nav>
+    </div>
+    <div class="mdui-container-fluid">
+        <div id="head_md" class="mdui-typo nexmoe-item" style="display:none;padding: 20px 0;"></div>
+        <div id="content" class="nexmoe-item"></div>
+        <div id="readme_md" class="mdui-typo nexmoe-item" style="display:none; padding: 20px 0;"></div>
+    </div>
 </div>
 <br><br><br><br><br>`;
 
